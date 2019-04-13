@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "optitruckserver459aad59",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "items",
+    "apiName": "items",
+    "functionArns": [
+        {
+            "lambdaFunction": "optitruckserver459aad59"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "optitruckserver-20190413094012-authRole",
+        "unAuthRoleName": "optitruckserver-20190413094012-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "optitruckserver459aad59",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

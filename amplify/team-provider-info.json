@@ -1,0 +1,14 @@
+{
+    "en": {
+        "awscloudformation": {
+            "AuthRoleName": "optitruckserver-20190413094012-authRole",
+            "UnauthRoleArn": "arn:aws:iam::548869258125:role/optitruckserver-20190413094012-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::548869258125:role/optitruckserver-20190413094012-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "optitruckserver-20190413094012-deployment",
+            "UnauthRoleName": "optitruckserver-20190413094012-unauthRole",
+            "StackName": "optitruckserver-20190413094012",
+            "StackId": "arn:aws:cloudformation:us-west-2:548869258125:stack/optitruckserver-20190413094012/cf46fa50-5e0a-11e9-84ab-06c45ca80dba"
+        }
+    }
+}
