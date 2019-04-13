@@ -31,5 +31,5 @@ app.use(cookieParser());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
+app.listen(process.env.port || 3001);
 module.exports = app;
