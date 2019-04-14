@@ -11,6 +11,8 @@ AWS.config.update({region: 'us-west-2'});
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var predictsRouter = require('./routes/predict');
+
 var app = express();
 
 app.use(function(err, req, res, next){
@@ -31,5 +33,6 @@ app.use(cookieParser());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/predict',predictsRouter);
 app.listen(process.env.port || 3001);
 module.exports = app;
