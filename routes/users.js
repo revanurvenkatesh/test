@@ -10,17 +10,17 @@ AWS.config.update({
 
 
 
-var table = "items-en";
+var table = "items-hmmmm";
 var docClient = new AWS.DynamoDB.DocumentClient();
 /* GET users listing. */
 router.post('/', function(req, res, next) {
     var body = req.body;
 
-    res.set('Content-Type', 'text/plain')
-    res.send(`You sent: ${body} to Express`)
+    res.set('Content-Type', 'text/plain');
     console.log('crazy happening!!!' + body.length );
-    for(var i = 0; i < body.length; i++) {
-        var obj = body[i];
+    for(let i = 0; i < body.length; i++) {
+         obj = body[i];
+        console.log(obj);
         var params = {
             TableName:table,
             Item:{
@@ -33,6 +33,7 @@ router.post('/', function(req, res, next) {
         };
     
         console.log("Adding a new item...");
+
         docClient.put(params, function(err, data) {
             if (err) {
                 console.error("Unable to add item. Error JSON:", JSON.stringify(err, null, 2));
@@ -41,6 +42,7 @@ router.post('/', function(req, res, next) {
             }
         });
     }
+    res.send('body is ' + {body});
 
 });
 

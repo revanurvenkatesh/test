@@ -67,8 +67,8 @@
 				"Runtime": "nodejs8.10",
 				"Timeout": "25",
 				"Code": {
-					"S3Bucket": "optitruckserver-20190413175335-deployment",
-					"S3Key": "amplify-builds/optitruckserver459aad59-1555203395-latest-build.zip"
+					"S3Bucket": "optitruckserver-20190414023827-deployment",
+					"S3Key": "amplify-builds/optitruckserver459aad59-1555236799-latest-build.zip"
 				}
 			}
 		},

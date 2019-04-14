@@ -1,0 +1,72 @@
+{
+    "identityPoolName": "optitruckserver_identitypool_702cf782",
+    "allowUnauthenticatedIdentities": true,
+    "lambdaLogPolicy": "optitruckserver_lambda_log_policy",
+    "openIdLambdaRoleName": "optitruckserver_openid_lambda_role",
+    "openIdRolePolicy": "optitruckserver_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "optitruckserver_openid_lambda_iam_policy",
+    "openIdLogPolicy": "optitruckserver_openid_lambda_log_policy",
+    "userPoolName": "optitruckserver_userpool_702cf782",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "optitruckserver_sns-role",
+    "roleExternalId": "optitruckserver_role_external_id",
+    "policyName": "optitruckserver-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [
+        "Requires Lowercase",
+        "Requires Uppercase",
+        "Requires Numbers",
+        "Requires Symbols"
+    ],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "optitruckserver_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "optitruckserver_totp_lambda_role",
+    "mfaLambdaLogPolicy": "optitruckserver_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "optitruckserver_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "optitruckserver_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "optitruckserver_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "optitruckserver_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "optitruckserver_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "authSelections": "identityPoolAndUserPool",
+    "resourceName": "cognito2eac7de0",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    }
+}

@@ -36,6 +36,26 @@
 					]
 				}
 			]
+		},
+		"restname": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "optitruckserver459aad59",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		}
+	},
+	"auth": {
+		"cognito2eac7de0": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
 		}
 	}
 }
